@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Archivos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manejo de Archivos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Inicio</a></li>
+                <li><a href="index.html#about">Acerca del Curso</a></li>
+                <li><a href="index.html#syllabus">Temario</a></li>
+                <li><a href="index.html#instructor">Instructor</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="file_handling">
+        <h2>Manejo de Archivos</h2>
+        <p>Python proporciona varias funciones y metodos para trabajar con archivos de texto y binarios.</p>
+
+        <h3>Lectura de Archivos</h3>
+        <p>Para leer el contenido de un archivo, primero se debe abrir utilizando la funcion <code>open()</code> y luego se puede leer utilizando metodos como <code>read()</code>, <code>readline()</code> o <code>readlines()</code>.</p>
+        <pre><code>with open('archivo.txt', 'r') as f:
+    contenido = f.read()</code></pre>
+
+        <h3>Escritura de Archivos</h3>
+        <p>Para escribir en un archivo, primero se debe abrir utilizando la funcion <code>open()</code> con el modo de escritura <code>'w'</code>, <code>'a'</code> o <code>'x'</code>, y luego se puede escribir utilizando el metodo <code>write()</code>.</p>
+        <pre><code>with open('archivo.txt', 'w') as f:
+    f.write("Hola, mundo!")</code></pre>
+
+        <h3>Manejo de Archivos Binarios</h3>
+        <p>Python tambien soporta el manejo de archivos binarios utilizando modos como <code>'rb'</code> y <code>'wb'</code>.</p>
+
+        <h3>Operaciones Adicionales</h3>
+        <p>Ademas de leer y escribir archivos, Python permite realizar operaciones como renombrar archivos, eliminar archivos, y manipular directorios.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Curso de Python. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+

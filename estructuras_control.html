@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras de Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Estructuras de Control</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Inicio</a></li>
+                <li><a href="index.html#about">Acerca del Curso</a></li>
+                <li><a href="index.html#syllabus">Temario</a></li>
+                <li><a href="index.html#instructor">Instructor</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="control_structures">
+        <h2>Estructuras de Control</h2>
+        <p>Las estructuras de control permiten modificar el flujo de ejecucion de un programa en funcion de condiciones especificas. En Python, las estructuras de control mas comunes son las condicionales y los bucles.</p>
+
+        <h3>Estructuras Condicionales</h3>
+        <p>Las estructuras condicionales permiten ejecutar bloques de codigo en funcion de una condicion. La estructura basica es <code>if</code>, <code>elif</code>, y <code>else</code>. Ejemplo:</p>
+        <pre><code>edad = 18
+
+if edad >= 18:
+    print("Eres mayor de edad")
+else:
+    print("Eres menor de edad")</code></pre>
+
+        <h3>Bucles</h3>
+        <p>Los bucles permiten ejecutar repetidamente un bloque de codigo. Los bucles mas comunes en Python son <code>for</code> y <code>while</code>.</p>
+
+        <h4>Bucle <code>for</code></h4>
+        <p>El bucle <code>for</code> se usa para iterar sobre una secuencia (como una lista, una tupla, un diccionario, un conjunto o una cadena). Ejemplo:</p>
+        <pre><code>numeros = [1, 2, 3, 4, 5]
+
+for numero in numeros:
+    print(numero)</code></pre>
+
+        <h4>Bucle <code>while</code></h4>
+        <p>El bucle <code>while</code> se ejecuta mientras una condicion sea verdadera. Ejemplo:</p>
+        <pre><code>contador = 0
+
+while contador < 5:
+    print(contador)
+    contador += 1</code></pre>
+
+        <h3>Interrupcion de Bucles</h3>
+        <p>Se pueden usar las instrucciones <code>break</code> y <code>continue</code> para controlar el flujo dentro de un bucle:</p>
+        <ul>
+            <li><code>break</code>: Sale del bucle inmediatamente.</li>
+            <li><code>continue</code>: Salta a la siguiente iteracion del bucle.</li>
+        </ul>
+        <pre><code>for i in range(10):
+    if i == 5:
+        break
+    print(i)</code></pre>
+
+        <h3>Bucles Anidados</h3>
+        <p>Es posible anidar bucles, es decir, colocar un bucle dentro de otro bucle. Ejemplo:</p>
+        <pre><code>for i in range(3):
+    for j in range(3):
+        print(f"i={i}, j={j}")</code></pre>
+
+        <h3>Sentencias de Control</h3>
+        <p>Las sentencias de control permiten alterar el flujo de ejecucion de un programa basandose en condiciones especificas. Las sentencias mas comunes son:</p>
+        <ul>
+            <li><code>if</code>, <code>elif</code>, <code>else</code></li>
+            <li><code>for</code></li>
+            <li><code>while</code></li>
+            <li><code>break</code></li>
+            <li><code>continue</code></li>
+        </ul>
+
+        <h3>Buenas Practicas</h3>
+        <p>Algunas buenas practicas al trabajar con estructuras de control incluyen:</p>
+        <ul>
+            <li>Usar nombres de variables descriptivos.</li>
+            <li>Evitar anidar demasiados bucles, ya que puede hacer que el codigo sea dificil de leer y mantener.</li>
+            <li>Usar comentarios para explicar la logica de las estructuras de control.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Curso de Python. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+

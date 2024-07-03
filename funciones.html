@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Funciones</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Inicio</a></li>
+                <li><a href="index.html#about">Acerca del Curso</a></li>
+                <li><a href="index.html#syllabus">Temario</a></li>
+                <li><a href="index.html#instructor">Instructor</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="functions">
+        <h2>Funciones</h2>
+        <p>Una funcion es un bloque de codigo que realiza una tarea especifica. Las funciones son utiles para reutilizar codigo y hacer que los programas sean mas organizados y faciles de mantener.</p>
+
+        <h3>Definicion de Funciones</h3>
+        <p>En Python, una funcion se define utilizando la palabra clave <code>def</code> seguida del nombre de la funcion y paréntesis. Ejemplo:</p>
+        <pre><code>def saludar():
+    print("Hola, bienvenido al curso de Python!")</code></pre>
+
+        <h3>Llamada a Funciones</h3>
+        <p>Una vez definida una funcion, se puede llamar escribiendo su nombre seguido de paréntesis. Ejemplo:</p>
+        <pre><code>saludar()</code></pre>
+
+        <h3>Parametros y Argumentos</h3>
+        <p>Las funciones pueden aceptar parametros, que son valores que se pasan a la funcion para que los use en su ejecucion. Ejemplo:</p>
+        <pre><code>def saludar(nombre):
+    print(f"Hola, {nombre}!")
+
+saludar("Juan")</code></pre>
+
+        <h3>Valores de Retorno</h3>
+        <p>Las funciones pueden devolver valores utilizando la palabra clave <code>return</code>. Ejemplo:</p>
+        <pre><code>def sumar(a, b):
+    return a + b
+
+resultado = sumar(5, 3)
+print(resultado)  # Imprime 8</code></pre>
+
+        <h3>Funciones Anidadas</h3>
+        <p>Es posible definir funciones dentro de otras funciones. Ejemplo:</p>
+        <pre><code>def exterior():
+    print("Esta es la funcion exterior")
+
+    def interior():
+        print("Esta es la funcion interior")
+
+    interior()
+
+exterior()</code></pre>
+
+        <h3>Funciones Lambda</h3>
+        <p>Las funciones lambda son funciones pequeñas y anonimas que se definen en una sola linea. Ejemplo:</p>
+        <pre><code>suma = lambda a, b: a + b
+print(suma(5, 3))  # Imprime 8</code></pre>
+
+        <h3>Documentacion de Funciones</h3>
+        <p>Es una buena practica documentar las funciones utilizando cadenas de documentacion (docstrings). Ejemplo:</p>
+        <pre><code>def saludar(nombre):
+    """
+    Esta funcion saluda a la persona cuyo nombre se proporciona.
+    
+    Parametros:
+    nombre (str): El nombre de la persona
+    
+    Retorna:
+    None
+    """
+    print(f"Hola, {nombre}!")</code></pre>
+
+        <h3>Buenas Practicas</h3>
+        <p>Algunas buenas practicas al trabajar con funciones incluyen:</p>
+        <ul>
+            <li>Usar nombres descriptivos para las funciones.</li>
+            <li>Documentar las funciones con docstrings.</li>
+            <li>Mantener las funciones pequeñas y con una unica responsabilidad.</li>
+            <li>Evitar usar demasiados parametros; en su lugar, considerar usar objetos para agrupar parametros relacionados.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Curso de Python. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
